@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:hapticFeedbackEnabled="false"
+    card_view:cardCornerRadius="51dp"
+    card_view:cardElevation="2dp">
+
+    <LinearLayout
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/btn"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="40dp">
+
+        <ImageView
+            android:id="@+id/imageCart"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            card_view:srcCompat="@drawable/ki" />
+
+        <LinearLayout
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameItemCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/adamina"
+                android:gravity="center"
+                android:text="TextView"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/CounterCart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adamina"
+                android:gravity="center"
+                android:text="Counter: "
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/TotalCart"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:fontFamily="@font/adamina"
+                android:text="Total: "
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/cartPrice"
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/adamina"
+                android:text="Price:"
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/remove"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/add"
+            android:text="Remove" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

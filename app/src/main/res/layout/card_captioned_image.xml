@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:hapticFeedbackEnabled="false"
+    card_view:cardCornerRadius="51dp"
+    card_view:cardElevation="2dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/btn"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            card_view:srcCompat="@drawable/ki" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameItems"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/adamina"
+                android:text="saala"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/textCOUNT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:fontFamily="@font/adamina"
+                android:text="Counter: "
+                android:textColor="@color/black" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/textPRICE"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:fontFamily="@font/adamina"
+            android:text="Price: "
+            android:textColor="@color/black" />
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/add"
+            android:text="add"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

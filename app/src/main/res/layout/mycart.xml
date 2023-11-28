@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/ki">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="start|fill"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="16dp"
+                    android:background="@drawable/backbutton"
+                    app:srcCompat="@drawable/i" />
+
+                <TextView
+
+                    android:id="@+id/it"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="My Cart"
+                    android:textAlignment="center"
+
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycleCart"
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="90dp"
+                android:background="@drawable/background"
+                android:padding="20dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/totalCarditems"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/adamina"
+                    android:gravity="center"
+                    android:text="Total"
+                    android:textColor="@color/black"
+                    android:textSize="30dp" />
+
+                <Button
+                    android:id="@+id/buttonTotalcart"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/backbtn"
+                    android:text="0 $" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
